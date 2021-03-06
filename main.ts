@@ -13,7 +13,7 @@ input.onButtonPressed(Button.AB, function () {
     basic.clearScreen()
 })
 radio.onReceivedString(function (receivedString) {
-    basic.showString("(!)")
+    basic.showString("New Text")
 })
 input.onGesture(Gesture.Shake, function () {
     basic.showLeds(`
@@ -26,7 +26,7 @@ input.onGesture(Gesture.Shake, function () {
     basic.clearScreen()
 })
 input.onLogoEvent(TouchButtonEvent.Touched, function () {
-    radio.sendString("(!)")
+    radio.sendString("New text")
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     basic.showLeds(`
