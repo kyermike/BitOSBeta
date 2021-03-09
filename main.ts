@@ -39,7 +39,7 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     basic.pause(60000)
     basic.clearScreen()
 })
-music.playMelody("C5 B D F B E G A ", 120)
+music.playMelody("F B C D G C5 E B ", 120)
 radio.setGroup(123)
 basic.forever(function () {
 	
