@@ -4,12 +4,18 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "BitOS 1.0 (Beta)": "pkg:BitOS 1.0 (Beta).json",
+        "radio-broadcast": "*",
+        "servo": "*",
+        "pxt-sonar": "github:microsoft/pxt-sonar#v0.0.5",
+        "neopixel": "github:microsoft/pxt-neopixel#v0.7.3"
     },
     "files": [
         "main.blocks",
         "main.ts",
-        "README.md"
+        "README.md",
+        "BitOS 1.0 (Beta).json"
     ],
     "testFiles": [
         "test.ts"

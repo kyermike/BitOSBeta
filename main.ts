@@ -1,4 +1,78 @@
 input.onLogoEvent(TouchButtonEvent.LongPressed, function () {
+    for (let index = 0; index < 10; index++) {
+        basic.showLeds(`
+            . . # . .
+            # . . . .
+            # # . . #
+            # . . # #
+            # # . . .
+            `)
+        basic.showLeds(`
+            . . # . .
+            # . . . .
+            # # . . #
+            . # # . .
+            # # . . .
+            `)
+        basic.showLeds(`
+            . . # . .
+            # . . . .
+            . . # # .
+            . # # . .
+            # # . . .
+            `)
+        basic.showLeds(`
+            . # . . .
+            . # # # #
+            . . # # .
+            . # # . .
+            # # . . .
+            `)
+        basic.showLeds(`
+            # # . # #
+            . # # # #
+            . . # # .
+            . # # . .
+            # # . . .
+            `)
+        basic.showLeds(`
+            # # . # #
+            . # # # #
+            . . # # .
+            . # # . .
+            . . # # #
+            `)
+        basic.showLeds(`
+            # # . # #
+            . # # # #
+            . . # # .
+            # . . # #
+            . . # # #
+            `)
+        basic.showLeds(`
+            # # . # #
+            . # # # #
+            # # . . #
+            # . . # #
+            . . # # #
+            `)
+        basic.showLeds(`
+            # # . # #
+            # . . . .
+            # # . . #
+            # . . # #
+            . . # # #
+            `)
+        basic.showLeds(`
+            . . # . .
+            # . . . .
+            # # . . #
+            # . . # #
+            . . # # #
+            `)
+    }
+})
+input.onButtonPressed(Button.A, function () {
     led.enable(false)
 })
 input.onButtonPressed(Button.AB, function () {
@@ -12,9 +86,6 @@ input.onButtonPressed(Button.AB, function () {
         `)
     basic.clearScreen()
 })
-radio.onReceivedString(function (receivedString) {
-    basic.showString("New Text")
-})
 input.onGesture(Gesture.Shake, function () {
     basic.showLeds(`
         # . . . #
@@ -26,7 +97,7 @@ input.onGesture(Gesture.Shake, function () {
     basic.clearScreen()
 })
 input.onLogoEvent(TouchButtonEvent.Touched, function () {
-    radio.sendString("New text")
+	
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     basic.showLeds(`
@@ -39,8 +110,631 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     basic.pause(60000)
     basic.clearScreen()
 })
-music.playMelody("F B C D G C5 E B ", 120)
-radio.setGroup(123)
+basic.showLeds(`
+    # # # # #
+    # # # # #
+    # # # # #
+    # # # # #
+    # # # # #
+    `)
+basic.showLeds(`
+    # # # # #
+    # # # # #
+    # # # # #
+    # # # # #
+    # # # # .
+    `)
+basic.showLeds(`
+    # # # # #
+    # # # # #
+    # # # # #
+    # # # # .
+    # # # . .
+    `)
+basic.showLeds(`
+    # # # # #
+    # # # # #
+    # # # # .
+    # # # . .
+    # # . . .
+    `)
+basic.showLeds(`
+    # # # # #
+    # # # # .
+    # # # . .
+    # # . . .
+    # . . . .
+    `)
+basic.showLeds(`
+    # # # # .
+    # # # . .
+    # # . . .
+    # . . . .
+    . . . . .
+    `)
+basic.showLeds(`
+    # # # . .
+    # # . . .
+    # . . . .
+    . . . . .
+    . . . . .
+    `)
+basic.showLeds(`
+    # # . . .
+    # . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    `)
+basic.showLeds(`
+    # . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    `)
+basic.showLeds(`
+    # # . # #
+    . # # # #
+    . . # # .
+    . # # . .
+    # # . . .
+    `)
+basic.showLeds(`
+    # # # # #
+    . # # # #
+    . . # # .
+    . # # . .
+    # # . . .
+    `)
+basic.showLeds(`
+    # . . . #
+    # # # # #
+    . . # # .
+    . # # . .
+    # # . . .
+    `)
+basic.showLeds(`
+    # . . . #
+    . # . # .
+    # # # # #
+    . # # . .
+    # # . . .
+    `)
+basic.showLeds(`
+    # . . . #
+    . # . # .
+    . . # . .
+    # # # # #
+    # # . . .
+    `)
+basic.showLeds(`
+    # . . . #
+    . # . # .
+    . . # . .
+    . # . # .
+    # # # # #
+    `)
+basic.showLeds(`
+    # . . . #
+    . # . # .
+    . . # . .
+    . # . # .
+    # . . . #
+    `)
+basic.showLeds(`
+    # . # . #
+    . # # # .
+    # # # # #
+    . # # # .
+    # . # . #
+    `)
+basic.showLeds(`
+    # # # # #
+    # # # # #
+    # # # # #
+    # # # # #
+    # # # # #
+    `)
+basic.showLeds(`
+    # # # # #
+    # # # # #
+    # # . # #
+    # # # # #
+    # # # # #
+    `)
+basic.showLeds(`
+    # # # # #
+    # # . # #
+    # . . . #
+    # # . # #
+    # # # # #
+    `)
+basic.showLeds(`
+    # # # # #
+    # . . . #
+    # . . . #
+    # . . . #
+    # # # # #
+    `)
+basic.showLeds(`
+    # # . # #
+    # . . . #
+    . . . . .
+    # . . . #
+    # # . # #
+    `)
+basic.showLeds(`
+    # . . . #
+    . . . . .
+    . . . . .
+    . . . . .
+    # . . . #
+    `)
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    . . # . .
+    . . . . .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . . # . .
+    . # # # .
+    . . # . .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . # # # .
+    . # # # .
+    . # # # .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . # . .
+    . # # # .
+    # # # # #
+    . # # # .
+    . . # . .
+    `)
+basic.showLeds(`
+    . # # # .
+    # # # # #
+    # # # # #
+    # # # # #
+    . # # # .
+    `)
+basic.showLeds(`
+    # # # # #
+    # # # # #
+    # # # # #
+    # # # # #
+    # # # # #
+    `)
+basic.showLeds(`
+    . # # # .
+    # . # . #
+    # # . # #
+    # . # . #
+    . # # # .
+    `)
+basic.showLeds(`
+    . # # # .
+    # . # . #
+    # # . # #
+    # . # . #
+    . . . . .
+    `)
+basic.showLeds(`
+    . # # # .
+    # . # . #
+    # # . # #
+    # . # . #
+    . . . . .
+    `)
+basic.showLeds(`
+    . # # # .
+    # . # . #
+    # # . # #
+    . . . . .
+    . . # # #
+    `)
+basic.showLeds(`
+    . # # # .
+    # . # . #
+    # # . # #
+    . . . . .
+    . . # # #
+    `)
+basic.showLeds(`
+    . # # # .
+    . . . . .
+    # # . . #
+    # . . # #
+    . . # # #
+    `)
+basic.showLeds(`
+    . . . . .
+    # . . . .
+    # # . . #
+    # . . # #
+    . . # # #
+    `)
+basic.showLeds(`
+    . . # . .
+    # . . . .
+    # # . . #
+    # . . # #
+    . . # # #
+    `)
+basic.showLeds(`
+    . . . . #
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    `)
+basic.showLeds(`
+    # . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    # . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . . #
+    `)
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . # #
+    . . . # .
+    `)
+basic.showLeds(`
+    . . . # .
+    . . . # #
+    . . . . .
+    . . . . .
+    . . . . .
+    `)
+basic.showLeds(`
+    . # . . .
+    # # . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    . . . . .
+    # # . . .
+    . # . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . # . # .
+    . . . . .
+    . # . # .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . . # . .
+    . # . # .
+    . . # . .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . # # # .
+    . # . # .
+    . # # # .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    . . # . .
+    . . . . .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . . # . .
+    . # . # .
+    . . # . .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . # . .
+    . # . # .
+    # . . . #
+    . # . # .
+    . . # . .
+    `)
+basic.showLeds(`
+    . # . # .
+    # . . . #
+    . . . . .
+    # . . . #
+    . # . # .
+    `)
+basic.showLeds(`
+    # . . . #
+    . . . . .
+    . . . . .
+    . . . . .
+    # . . . #
+    `)
+basic.showLeds(`
+    . . . . .
+    . # . # .
+    . . . . .
+    . # . # .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    . . # . .
+    . . . . .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . . # . .
+    . # . # .
+    . . # . .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . # . .
+    . # . # .
+    # . . . #
+    . # . # .
+    . . # . .
+    `)
+basic.showLeds(`
+    . # # # .
+    # . . . #
+    # . . . #
+    # . . . #
+    . # # # .
+    `)
+basic.showLeds(`
+    # # # # #
+    # . . . #
+    # . . . #
+    # . . . #
+    # # # # #
+    `)
+basic.showLeds(`
+    # # # # #
+    # # . # #
+    # . . . #
+    # # . # #
+    # # # # #
+    `)
+basic.showLeds(`
+    # # # # #
+    # # . # #
+    # . # . #
+    # # . # #
+    # # # # #
+    `)
+basic.showLeds(`
+    # # # # #
+    # # # # #
+    # # # # #
+    # # # # #
+    # # # # #
+    `)
+basic.showLeds(`
+    # # # # #
+    # # # # #
+    # # . # #
+    # # # # #
+    # # # # #
+    `)
+basic.showLeds(`
+    # # # # #
+    # # . # #
+    # . . . #
+    # # . # #
+    # # # # #
+    `)
+basic.showLeds(`
+    # # # # #
+    # . . . #
+    # . . . #
+    # . . . #
+    # # # # #
+    `)
+basic.showLeds(`
+    # # # # #
+    # # # # #
+    # # # # #
+    # # # # #
+    # # # # #
+    `)
+basic.showLeds(`
+    # # # # #
+    # # # # #
+    # # # # #
+    # # # # #
+    # # . . .
+    `)
+basic.showLeds(`
+    # # # # #
+    # # # # #
+    # # # # #
+    . # # . .
+    # # . . .
+    `)
+basic.showLeds(`
+    # # # # #
+    # # # # #
+    . . # # .
+    . # # . .
+    # # . . .
+    `)
+basic.showLeds(`
+    # # # # #
+    . # # # #
+    . . # # .
+    . # # . .
+    # # . . .
+    `)
+basic.showLeds(`
+    # # . # #
+    . # # # #
+    . . # # .
+    . # # . .
+    # # . . .
+    `)
+basic.showLeds(`
+    # # . # #
+    . # # # #
+    . . # # .
+    . # # . .
+    . . # # #
+    `)
+basic.showLeds(`
+    # # . # #
+    . # # # #
+    . . # # .
+    # . . # #
+    . . # # #
+    `)
+basic.showLeds(`
+    # # . # #
+    . # # # #
+    # # . . #
+    # . . # #
+    . . # # #
+    `)
+basic.showLeds(`
+    # # . # #
+    # . # . .
+    # # . . #
+    # . . # #
+    . . # # #
+    `)
+basic.showLeds(`
+    # # . # #
+    # . # . .
+    # # . . #
+    # . . # #
+    . . # # #
+    `)
+basic.showLeds(`
+    . . # . .
+    # . . . .
+    # # . . #
+    # . . # #
+    . . # # #
+    `)
+for (let index = 0; index < 4; index++) {
+    basic.showLeds(`
+        . . # . .
+        # . . . .
+        # # . . #
+        # . . # #
+        # # . . .
+        `)
+    basic.showLeds(`
+        . . # . .
+        # . . . .
+        # # . . #
+        . # # . .
+        # # . . .
+        `)
+    basic.showLeds(`
+        . . # . .
+        # . . . .
+        . . # # .
+        . # # . .
+        # # . . .
+        `)
+    basic.showLeds(`
+        . # . . .
+        . # # # #
+        . . # # .
+        . # # . .
+        # # . . .
+        `)
+    basic.showLeds(`
+        # # . # #
+        . # # # #
+        . . # # .
+        . # # . .
+        # # . . .
+        `)
+    basic.showLeds(`
+        # # . # #
+        . # # # #
+        . . # # .
+        . # # . .
+        . . # # #
+        `)
+    basic.showLeds(`
+        # # . # #
+        . # # # #
+        . . # # .
+        # . . # #
+        . . # # #
+        `)
+    basic.showLeds(`
+        # # . # #
+        . # # # #
+        # # . . #
+        # . . # #
+        . . # # #
+        `)
+    basic.showLeds(`
+        # # . # #
+        # . . . .
+        # # . . #
+        # . . # #
+        . . # # #
+        `)
+    basic.showLeds(`
+        . . # . .
+        # . . . .
+        # # . . #
+        # . . # #
+        . . # # #
+        `)
+}
 basic.forever(function () {
 	
 })
